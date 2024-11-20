@@ -73,8 +73,9 @@ Token *generate_number(const char *source, int *index) {
 }
 
 Token *generate_comment(const char *source, int *index) {
-    char buffer[256] = {0};  // Buffer to hold the comment content
+    char buffer[256] = {0};                                         // Buffer to hold the comment content
     int buffer_index = 0;
+    size_t start_line = line_number;                                // Track start line of the comment
 
     // Single-line comment: starts with `~~`
     if (source[*index] == '~' && source[*index + 1] == '~') {
@@ -101,7 +102,7 @@ Token *generate_comment(const char *source, int *index) {
         return create_token(TOKEN_COMMENT, buffer, line_number);
     }
 
-    return NULL;  // Not a comment
+    return NULL;  
 }
 
 Token *classify_unknown(char c) {
@@ -498,7 +499,7 @@ Token **tokenize(const char *source, size_t *token_count) {
 }
 
 
-// Modify the lexer function to accept the symbol table file
+// Modify lexer function to accept the symbol table file
 Token **lexer(FILE *file, size_t *token_count) {
     fseek(file, 0, SEEK_END);
     long file_size = ftell(file);
