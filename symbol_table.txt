@@ -1,0 +1,21 @@
+TOKEN:  Single-line comment TYPE: COMMENT              LINE: 1
+TOKEN: 
+Multi-line
+comment
+ TYPE: COMMENT              LINE: 2
+TOKEN: INTEGER              TYPE: RESERVED-WORD        LINE: 3
+TOKEN: x                    TYPE: IDENTIFIER           LINE: 3
+TOKEN: =                    TYPE: ASSIGNMENT_OPERATOR  LINE: 3
+TOKEN: 123                  TYPE: NUMBER               LINE: 3
+TOKEN: ;                    TYPE: DELIMITER            LINE: 3
+TOKEN: FLOAT                TYPE: RESERVED-WORD        LINE: 4
+TOKEN: y                    TYPE: IDENTIFIER           LINE: 4
+TOKEN: =                    TYPE: ASSIGNMENT_OPERATOR  LINE: 4
+TOKEN: 45.67                TYPE: NUMBER               LINE: 4
+TOKEN: ;                    TYPE: DELIMITER            LINE: 4
+TOKEN: STRING               TYPE: RESERVED-WORD        LINE: 5
+TOKEN: name                 TYPE: IDENTIFIER           LINE: 5
+TOKEN: =                    TYPE: ASSIGNMENT_OPERATOR  LINE: 5
+TOKEN: John                 TYPE: IDENTIFIER           LINE: 5
+TOKEN: ;                    TYPE: DELIMITER            LINE: 5
+TOKEN: unrecognized_token_here TYPE: IDENTIFIER           LINE: 6

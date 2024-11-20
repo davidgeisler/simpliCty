@@ -1,0 +1,9 @@
+~~ Single-line comment
+~^
+Multi-line
+comment
+^~
+integer x = 123;
+float y = 45.67;
+string name = "John";
+unrecognized_token_here

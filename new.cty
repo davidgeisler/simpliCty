@@ -1,0 +1,31 @@
+main {
+    integer x = 10;           
+    float y = 5.5;           
+    string message = "Hello, simpliCty!"; 
+
+    if (x > 5 && y <= 10) then
+        display("Condition is true");
+    end
+
+    for (integer i = 0; i < 5; i++) {
+        display("Iteration:", i);
+    }
+
+    do
+        input("Enter your age:") let age;
+        if (age >= 18) then
+            display("Adult");
+        else
+            display("Minor");
+        end
+    while (age != 0);
+
+    ~^ This is a multi-line comment.
+       It describes the logic of the program. ^~
+    
+    x = x + 5;        
+    y $= 2.5;         
+    boolean isDone = false;
+
+    end
+}
