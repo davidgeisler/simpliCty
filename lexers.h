@@ -25,8 +25,8 @@ typedef enum {
 
 // Structure to represent a token
 typedef struct {
-    TokenType type;       // Token type
-    char *value;          // (e.g., "if", "123")
+    TokenType type;               // Token type
+    char *value;                  // (e.g., "if", "123")
     size_t line_num;      
 } Token;
 
@@ -42,4 +42,4 @@ void write_to_symbol_table(const Token *token, FILE *symbol_table_file);
 // Free memory allocated for a token
 void free_token(Token *token);
 
-#endif // LEXER_H_
+#endif                            // LEXER_H_
